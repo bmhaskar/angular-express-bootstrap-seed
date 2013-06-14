@@ -22,10 +22,10 @@ function MyCtrl2() {
 
 function loginController($scope, $http,$location,$timeout) {
 
-  $scope.login =function () {
+  $scope.loginCallback =function () {
     console.login("Sdfsdf");
   }
-  $scope.user = {id:1,name:"Bharat"};
+  $scope.user = {id:0,name:"Bharat"};
 
   $timeout(function () {
     if($scope.user.id)
