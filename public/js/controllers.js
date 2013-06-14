@@ -12,10 +12,24 @@ function AppCtrl($scope, $http) {
   });
 }
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
+function MyCtrl1() {
 
-
-function MyCtrl2() {
 }
-MyCtrl2.$inject = [];
+function MyCtrl2() {
+
+}
+
+
+function loginController($scope, $http,$location,$timeout) {
+
+  $scope.login =function () {
+    console.login("Sdfsdf");
+  }
+  $scope.user = {id:1,name:"Bharat"};
+
+  $timeout(function () {
+    if($scope.user.id)
+    $location.path('/about-me');
+  },2500)
+}
+

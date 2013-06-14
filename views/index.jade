@@ -4,18 +4,18 @@ block body
   .navbar.navbar-fixed-top
     .navbar-inner
       .container-fluid
-        a.brand(href='#') AngularExpressBootstrapSeed
+        a.brand(href='#') My First BootStrap Experience
         ul.nav
-          li
-            a(href='view1') View1
-          li
-            a(href='view2') View2                
-  .container-fluid      
+          li.divider-vertical
+            a(href='about-me') About Me
+          li.divider-vertical
+            a(href='tech-blogs') Tech Blog Posts
+  .container-fluid
     div(ng-controller='AppCtrl')
-      .hero-unit  
-        h1 Hello {{name}}
+      .hero-unit
+        h2 Welcome to {{name}}'s blog
       div(ng-view)
-    hr  
+    hr
     div
       | Angular seed app: v
       span(app-version)
