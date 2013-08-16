@@ -13,17 +13,19 @@ block body
   .container-fluid
     div(ng-controller='AppCtrl')
       .hero-unit
-        .row-fluid
-          .span2
-              img.img-circle(src="images/my_pic.png",height="140px",width="140px")
-          .span8
+        .row-fluid.content-center
+          img.header-image(src="images/background.jpg")
+        .row-fluid.header-welcome-message
+          .span1.offset1
+              img.img-polaroid(src="images/my_pic.jpg",height="120px",width="120px")
+          .span10.content-left
             h2 Welcome to {{name}}'s blog
       div.row-fluid.ng-view
   footer
     div.row-fluid
       .span6
       .span6
-    .text-center
+    .row-fluid.text-center
         p| © Bharat Mhaskar 2013
 
   script(src='js/lib/angular/angular.js')

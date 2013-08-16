@@ -39,3 +39,49 @@
 a { 
 text-decoration: none;
 }
+ 
+.header-image {
+  width: 100%;
+}
+.hero-unit {
+  position: relative;
+  padding: 0;
+}
+.header-welcome-message {
+  position: absolute;
+  margin-top: -10%;
+}
+
+.header-welcome-message img {
+-webkit-transform: rotate(-25deg);
+-ms-transform: rotate(-25deg);
+transform: rotate(-25deg);
+-webkit-transition-property: all;
+-ms-transition-property: all;
+transition-property: all;
+-webkit-transition-duration: 0.4s;
+-ms-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+
+.header-welcome-message img:hover{
+
+
+-webkit-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition-property: all;
+-ms-transition-property: all;
+transition-property: all;
+-webkit-transition-duration: 0.4s;
+-ms-transition-duration: 0.4s;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .header-welcome-message {
+    position: relative;
+  }
+}
